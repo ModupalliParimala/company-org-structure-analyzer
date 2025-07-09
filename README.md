@@ -68,3 +68,14 @@ It detects:
 5. **Running Tests**
 
    mvn test
+
+## Output from the sample data in Employees.csv file
+- Underpaid Managers:
+  - Martin Chekov is underpaid by 15000.00
+  - Joe Doe is underpaid by 7200.00
+
+- Overpaid Managers:
+  - Bob Ronstad is overpaid by 2500.00
+
+- Employees with too long reporting chain:
+  - Brett Hardleaf has a depth of 3 (too long by 1)

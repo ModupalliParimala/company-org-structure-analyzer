@@ -11,10 +11,6 @@ public record Employee(
         return firstName + " " + lastName;
     }
 
-    public boolean isCEO() {
-        return managerId == null || managerId.isBlank();
-    }
-
     @Override
     public String toString() {
         return getFullName() + " (" + id + ")";

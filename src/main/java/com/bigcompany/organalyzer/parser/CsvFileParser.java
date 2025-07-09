@@ -20,16 +20,25 @@ public class CsvFileParser {
                     continue;
                 }
 
-                String[] tokens = line.split(",",-1); // include trailing empty strings
+                String[] tokens = line.split(",", -1); // include trailing empty strings
                 if (tokens.length < 5) continue;
 
                 String id = tokens[0].trim();
                 String firstName = tokens[1].trim();
                 String lastName = tokens[2].trim();
-                double salary = Double.parseDouble(tokens[3].trim());
+                String salaryStr = tokens[3].trim();
                 String managerId = tokens[4].trim().isEmpty() ? null : tokens[4].trim();
 
-                employees.add(new Employee(id, firstName, lastName, salary, managerId));
+                // Validate required fields
+                if (id.isEmpty() || firstName.isEmpty()) {
+                    continue; // skip incomplete or invalid entries
+                }
+
+                employees.add(new Employee(id,
+                        firstName,
+                        lastName,
+                        salaryStr.isEmpty() ? 0.0 : Double.parseDouble(salaryStr),
+                        managerId));
             }
         }
 
