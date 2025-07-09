@@ -24,7 +24,7 @@ It detects:
 ## Assumptions
 
 
-- The Reporting depth ois assumed as 4.
+- The Reporting depth is assumed as 2.
 - Depth is measured from the CEO (depth 0) downward.
 - An employee is flagged as too deep if there are more than 4 levels of managers above them.
 
