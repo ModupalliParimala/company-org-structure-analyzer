@@ -38,21 +38,22 @@ It detects:
 - I have modified the csv to output all kinds of responses(Underpaid,Overpaid and long reporting chain)
 
 ## Technologies Used
-Java 17 (or any version you prefer)
-Maven
-JUnit 5
+- Java 17 (or any version you prefer)
+- Maven
+- JUnit 5
 
 ## How to Run
 
 1. **Clone this repo**
 
-    git clone https://github.com/ModupalliParimala/company-org-structure-analyzer.git
-    cd company-org-structure-analyzer
+    - git clone https://github.com/ModupalliParimala/company-org-structure-analyzer.git
+    - cd company-org-structure-analyzer
 
 2. **Place the input file**
 
-    The `employees.csv` file should be placed in `src/main/resources` and will be loaded via the classpath.
-    Modify `maxAllowedDepth` constant value in `src/main/java/com/bigcompany/organalyzer/OrganizationReportGenerator.java` file
+    - The `employees.csv` file should be placed in `src/main/resources` and will be loaded via the classpath.
+   
+    - Modify `maxAllowedDepth` constant value in `src/main/java/com/bigcompany/organalyzer/OrganizationReportGenerator.java` file
 
 3. **Build the project**
 
@@ -60,11 +61,9 @@ JUnit 5
 
 4. **Run the application**
 
-    *Command Prompt*: mvn exec:java -Dexec.mainClass=com.bigcompany.organalyzer.OrganizationReportGenerator
-
-    *PowerShell*: mvn exec:java "-Dexec.mainClass=com.bigcompany.organalyzer.OrganizationReportGenerator"
-
-    *IDE*: Just go to OrganizationReportGenerator.java file and run OrganizationReportGenerator.main() method 
+    - *Command Prompt*: mvn exec:java -Dexec.mainClass=com.bigcompany.organalyzer.OrganizationReportGenerator
+    - *PowerShell*: mvn exec:java "-Dexec.mainClass=com.bigcompany.organalyzer.OrganizationReportGenerator"
+    - *IDE*: Just go to OrganizationReportGenerator.java file and run OrganizationReportGenerator.main() method 
 
 5. **Running Tests**
 
