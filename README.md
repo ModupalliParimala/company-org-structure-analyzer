@@ -61,7 +61,9 @@ JUnit 5
 4. **Run the application**
 
     *Command Prompt*: mvn exec:java -Dexec.mainClass=com.bigcompany.organalyzer.OrganizationReportGenerator
+
     *PowerShell*: mvn exec:java "-Dexec.mainClass=com.bigcompany.organalyzer.OrganizationReportGenerator"
+
     *IDE*: Just go to OrganizationReportGenerator.java file and run OrganizationReportGenerator.main() method 
 
 5. **Running Tests**
